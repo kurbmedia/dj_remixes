@@ -1,3 +1,5 @@
+require 'dj_remixes/worker'
+
 module Mail
   class Message
     
