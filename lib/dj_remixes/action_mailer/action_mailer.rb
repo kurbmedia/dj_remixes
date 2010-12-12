@@ -7,7 +7,7 @@ module Mail
 
       def perform   
         # Force loading of the class first to avoid the dreaded 'undefined class/module' error
-        eval(self.klass)
+        #eval(self.klass)
         message = Marshal.load(self.mail)
         message.deliver_without_worker
       end
